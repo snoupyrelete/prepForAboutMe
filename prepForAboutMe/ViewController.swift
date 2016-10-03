@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
 
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,11 +26,13 @@ class ViewController: UIViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Pass Data
+        
     }
 
     @IBAction func switchScreenToUpdated(sender: UIButton)
     {
-        performSegueWithIdentifier("toViewTwo", sender: nil)
+        performSegueWithIdentifier("toViewTwo", sender: sender)
+        
     }
 
 }
