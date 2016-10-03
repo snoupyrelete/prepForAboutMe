@@ -25,12 +25,9 @@
                                     <color key="titleShadowColor" red="0.11118449389371259" green="0.8849037247474747" blue="0.78703401423326125" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="switchScreenToUpdated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ja2-Ps-2f6"/>
                                     <segue destination="4jo-ws-iH9" kind="show" identifier="toViewTwo" id="eXN-rV-oB8"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uJ-xw-WSZ">
-                                <rect key="frame" x="249" y="292" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
