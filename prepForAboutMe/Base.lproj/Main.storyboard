@@ -17,15 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-sw-ntG">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-sw-ntG">
+                                <rect key="frame" x="239" y="282" width="123" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="Change View">
+                                    <color key="titleColor" red="1" green="0.14023953089999999" blue="0.9519953095" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.11118449389371259" green="0.8849037247474747" blue="0.78703401423326125" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="4jo-ws-iH9" kind="show" id="eXN-rV-oB8"/>
+                                    <segue destination="4jo-ws-iH9" kind="show" identifier="toViewTwo" id="eXN-rV-oB8"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uJ-xw-WSZ">
+                                <rect key="frame" x="249" y="292" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vTw-sw-ntG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DRP-d9-i4B"/>
+                            <constraint firstItem="vTw-sw-ntG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pzW-GR-bBX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -43,7 +55,19 @@
                     <view key="view" contentMode="scaleToFill" id="pjA-MQ-WAf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the second view!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-Mc-F6A">
+                                <rect key="frame" x="149" y="285" width="303" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.14023953089999999" blue="0.9519953095" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QU4-Mc-F6A" firstAttribute="centerX" secondItem="pjA-MQ-WAf" secondAttribute="centerX" id="30c-FI-7Gj"/>
+                            <constraint firstItem="QU4-Mc-F6A" firstAttribute="centerY" secondItem="pjA-MQ-WAf" secondAttribute="centerY" id="zd7-1Z-z8B"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0x-3q-HVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
