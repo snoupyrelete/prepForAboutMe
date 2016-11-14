@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    @IBOutlet weak var myImage: UIImageView!
 
 
     override func viewDidLoad()
@@ -35,5 +36,14 @@ class ViewController: UIViewController
         
     }
 
+    @IBAction func switchImage(sender: UIButton)
+    {
+        if myImage.image == UIImage(named: "smiley") {
+             myImage.image = UIImage(named: "discoBall")
+        } else {
+            myImage.image = UIImage(named: "smiley")
+        }
+       
+    }
 }
 

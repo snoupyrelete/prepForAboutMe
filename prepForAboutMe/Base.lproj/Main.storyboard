@@ -29,13 +29,37 @@
                                     <segue destination="4jo-ws-iH9" kind="show" identifier="toViewTwo" id="eXN-rV-oB8"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discoBall" translatesAutoresizingMaskIntoConstraints="NO" id="huJ-1q-8jB">
+                                <rect key="frame" x="240" y="28" width="121" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="4pY-kN-mhX"/>
+                                    <constraint firstAttribute="width" constant="121" id="K8F-zs-dcQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJU-F0-gNB">
+                                <rect key="frame" x="225" y="152" width="151" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="SWITCH IMAGE">
+                                    <color key="titleColor" red="1" green="0.70866607079999999" blue="0.16220144610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nn2-2r-XWq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vTw-sw-ntG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DRP-d9-i4B"/>
+                            <constraint firstItem="aJU-F0-gNB" firstAttribute="top" secondItem="huJ-1q-8jB" secondAttribute="bottom" constant="5" id="KVr-6b-COy"/>
+                            <constraint firstItem="huJ-1q-8jB" firstAttribute="centerX" secondItem="vTw-sw-ntG" secondAttribute="centerX" id="aYR-ba-87h"/>
+                            <constraint firstItem="huJ-1q-8jB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="pcM-tY-9mp"/>
                             <constraint firstItem="vTw-sw-ntG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pzW-GR-bBX"/>
+                            <constraint firstItem="aJU-F0-gNB" firstAttribute="centerX" secondItem="huJ-1q-8jB" secondAttribute="centerX" id="xaq-py-D9u"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myImage" destination="huJ-1q-8jB" id="le1-pT-y4e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,22 +103,8 @@
             </objects>
             <point key="canvasLocation" x="901" y="414"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="wvo-4a-F8b">
-            <objects>
-                <viewController id="66g-L0-o3U" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nnw-uD-6uP"/>
-                        <viewControllerLayoutGuide type="bottom" id="a6K-eU-K01"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="X5Y-ci-5Kh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YEM-Ln-7oS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
+    <resources>
+        <image name="discoBall" width="1376" height="1500"/>
+    </resources>
 </document>
